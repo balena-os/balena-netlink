@@ -2,6 +2,8 @@
 
 ![Build Status](https://github.com/vishvananda/netlink/actions/workflows/main.yml/badge.svg) [![GoDoc](https://godoc.org/github.com/vishvananda/netlink?status.svg)](https://godoc.org/github.com/vishvananda/netlink)
 
+**⚠️⚠️⚠️We don't maintain the balena-related docs here!⚠️⚠️⚠️** Please refer to the [balena documentation website](https://docs.balena.io) instead.
+
 The netlink package provides a simple netlink library for go. Netlink
 is the interface a user-space program in linux uses to communicate with
 the kernel. It can be used to add and remove interfaces, set ip addresses

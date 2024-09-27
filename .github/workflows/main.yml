@@ -1,4 +1,4 @@
-name: Main 
+name: Main
 
 on:
   push:
@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
 
     - name: Set up Go
       uses: actions/setup-go@v2
@@ -31,12 +33,14 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
 
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
         go-version: 1.17
-          
+
     - name: Build
       run: go build ./...
 
